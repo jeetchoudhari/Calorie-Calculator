@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calorie</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-image: url('https://girlboss.com/cdn/shop/articles/Girlboss-Counting-Calories_860x570.jpg?v=1646599121.jpg');
+                
+                background-size: cover;
+    
+            }
+
+            .form-container {
+            border: 2px solid black;
+            padding: 30px;
+            max-width: 450px;
+            margin: 0 auto;
+            background-color: transparent;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        </style>
+</head>
+<body>
+
+    <ul class="flex border-b">
+        <li class="-mb-px mr-1"><h1>
+          <a class="bg-white inline-block border-2 border-t border-r rounded-t py-2 px-4 text-Red-500 font-semibold" href="#"> Calorie Calculator</a></h1>
+        </li>
+       <li class="mr-1">
+          <a class="bg-white inline-block py-2 px-4 text-red-500 hover:text-blue-800 font-semibold" href="#">Result(To be added)</a>
+        </li> 
+      </ul>
+
+
+      <div class="form-container">
+    <form action="/predict" method="post" enctype="multipart/form-data" class="border-3 border-black bg-transparent shadow-md px-4 pt-6 pb-8 mb-4 mx-auto max-w-md ">
+        
+        <label for="gender" class="   rounded mb-2 font-bold" >Gender:</label>
+        <select name="gender" id="gender" class=" border bg-white rounded">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+<br><br>
+        <label for="age" class="   mb-2 font-bold">Age:</label>
+        <input type="number" id="age" name="age" class=" border bg-white rounded" required>
+
+<br><br>
+        <label for="height" class="    mb-2 font-bold">Height:</label>
+        <input type="float" id="height" name="height" class=" border bg-white rounded" required>
+<br><br>
+        <label for="weight" class="   mb-2 font-bold">Weight:</label>
+        <input type="float" id="weight" name="weight" class=" border bg-white rounded" required>
+        <br><br>
+        <label for="duration" class="   mb-2 font-bold">Duration:</label>
+        <input type="number" id="duration" name="duration" class=" border bg-white rounded" required>
+        <br><br>
+        <label for="heart" class="    mb-2 font-bold">Heart Rate:</label>
+        <input type="float" id="heart" name="heart" class=" border bg-white rounded" required>
+        <br><br>
+        <label for="bodytemp" class="   mb-2 font-bold">Body temperature:</label>
+        <input type="float" id="bodytemp" name="bodytemp" class=" border bg-white rounded" required>
+    
+        <br><br>
+        <input type="submit" value="Submit" class="bg-blue-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+    </form>
+</div>
+</body>
+</html>
