@@ -4,3 +4,4 @@ tailwindcss
 numpy
 keras
 tensorflow
+xgboost
