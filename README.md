@@ -6,8 +6,19 @@ Users input various parameters and Leveraging the powerful XGBoost algorithm, th
 
 **Demo:** https://calorie-calculator-test.onrender.com/
 
+**Technologies used:** Python, Flask, CI/CD
+
+**How to Run:**
+
+Download the project
+Run the command "python3 app.py"
+
 **Applications:** Personal Fitness, Sports Training, Nutritional Planning
 
+**Screenshots:**
+![image](https://github.com/user-attachments/assets/a62b0c0e-2ef5-4bb9-8980-3a763890b16f)
+
+![image](https://github.com/user-attachments/assets/2c7c056d-98f5-4c6e-a989-737d39b24564)
 
 
 
